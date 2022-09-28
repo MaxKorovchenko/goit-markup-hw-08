@@ -1,0 +1,34 @@
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(101%);
+  transition: transform var(--animation-time) var(--animation-function);
+
+  background-color: var(--accent-bg-cl-90);
+
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.overlay__desc {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color: var(--light-txt-cl);
+}

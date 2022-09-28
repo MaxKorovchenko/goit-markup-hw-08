@@ -1,0 +1,39 @@
+:root {
+  /* Fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+
+  --light-txt-cl: #ffffff;
+  --light-txt-cl-60: rgba(255, 255, 255, 0.6);
+  --light-txt-cl-10: rgba(255, 255, 255, 0.1);
+  --accent-txt-cl: #2196f3;
+  --logo-txt-cl: #000000;
+  --team-icon-txt-cl: #afb1b8;
+  --placeholder-txt-cl-50: rgba(117, 117, 117, 0.5);
+
+  /* Background colors */
+  --main-bg-cl: #ffffff;
+  --light-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  --fallback-bg-cl: #c4c4c4;
+  --accent-bg-cl: #2196f3;
+  --accent-bg-cl-90: rgba(33, 150, 243, 0.9);
+  --btn-accent-bg-cl: #188ce8;
+  --work-bg-cl-80: rgba(47, 48, 58, 0.8);
+  --backdrop-bg-cl-20: rgba(0, 0, 0, 0.2);
+
+  /* Border colors */
+  --header-border-cl: #ececec;
+  --cards-border-cl: #eeeeee;
+  --light-border-cl-30: rgba(255, 255, 255, 0.3);
+  --dark-border-cl-30: rgba(33, 33, 33, 0.2);
+
+  /* Others */
+  --bg-gradient-cl-40: rgba(47, 48, 58, 0.4);
+
+  --animation-time: 250ms;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
