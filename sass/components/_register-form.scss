@@ -3,9 +3,13 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .register__group {
@@ -86,13 +90,18 @@
   border-radius: 4px;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: var(--placeholder-txt-cl-50);
 
     opacity: 0;
     transition: opacity var(--animation-time) var(--animation-function);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
 
   &:focus::placeholder {
@@ -155,10 +164,15 @@
 
 .register__desc {
   user-select: none;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .register__btn {

@@ -1,10 +1,13 @@
 .features__list {
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 }
 
 .features__item {
-  flex-basis: calc((100% - 90px) / 3);
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  // flex-basis: calc((100% - 90px) / 3);
 }
 
 .features__box {
@@ -20,6 +23,7 @@
 .features__title {
   margin-bottom: 10px;
 
+  text-align: center;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
