@@ -9,6 +9,10 @@
   flex-basis: calc((100% - 30px) / 2);
   height: 92px;
 
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
   // width: 170px;
   // height: 92px;
 }
@@ -25,7 +29,8 @@
 
   color: var(--team-icon-txt-cl);
 
-  transition: color var(--animation-time) var(--animation-function), border-color var(--animation-time) var(--animation-function);
+  transition: color var(--animation-time) var(--animation-function),
+    border-color var(--animation-time) var(--animation-function);
 
   &:hover,
   &:focus {

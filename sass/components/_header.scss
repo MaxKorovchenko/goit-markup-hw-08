@@ -21,10 +21,18 @@
 
 .nav {
   margin-bottom: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 96px;
+  }
 }
 
 .nav__logo {
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
 }
 
 .nav__list {
@@ -63,20 +71,20 @@
 
     font-size: 14px;
     line-height: calc(16 / 14);
+
+    &--current::after {
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      bottom: -1.5%;
+
+      content: '';
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: var(--accent-bg-cl);
+    }
   }
-
-  // &--current::after {
-  //   position: absolute;
-  //   display: inline-block;
-  //   left: 0;
-  //   bottom: -1.5%;
-
-  //   content: '';
-  //   height: 4px;
-  //   width: 100%;
-  //   border-radius: 2px;
-  //   background-color: var(--accent-bg-cl);
-  // }
 
   &:hover,
   &:focus {
@@ -93,6 +101,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: column;
     gap: 10px;
   }
@@ -104,19 +113,20 @@
 
 .header-contacts__link {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
+
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  &:last-child {
+  &--second {
     font-size: 34px;
     line-height: calc(40 / 34);
 
     color: var(--accent-txt-cl);
   }
 
-  &:first-child {
+  &--first {
     font-size: 24px;
     line-height: calc(28 / 24);
 
@@ -124,18 +134,32 @@
   }
 
   @media screen and (max-width: 342px) {
-    &:last-child {
+    &--second {
       font-size: 27px;
     }
   }
 
   @media screen and (min-width: 343px) and (max-width: 380px) {
-    &:last-child {
+    &--second {
       font-size: 30px;
     }
   }
 
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    &--top {
+      padding-top: 20px;
+    }
+
+    &--bottom {
+      padding-bottom: 20px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
 

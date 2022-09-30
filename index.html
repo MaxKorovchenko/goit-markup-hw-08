@@ -31,16 +31,16 @@
 
           <ul class="header-contacts">
             <li class="header-contacts__item">
-              <a class="header-contacts__link" href="mailto:info@devstudio.com">
-                <svg class="header-contacts__icon" width="16" height="12">
+              <a class="header-contacts__link header-contacts__link--top" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon" width="14" height="10">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li class="header-contacts__item">
-              <a class="header-contacts__link" href="tel:+380961111111">
-                <svg class="header-contacts__icon" width="10" height="16">
+              <a class="header-contacts__link header-contacts__link--bottom" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10" height="14">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -78,7 +78,9 @@
                 </svg>
               </div>
               <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="features__text"
+                >Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p
+              >
             </li>
             <li class="features__item">
               <div class="features__box">
@@ -117,19 +119,37 @@
           <h2 class="studio-section-title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img class="work__img" src="./images/studio/img.jpg" alt="Створюємо структуру вашого сайту" width="370" />
+              <img
+                class="work__img"
+                srcset="./images/studio/work/work1_l-@1x.jpg 1x, ./images/studio/work/work1_l-@2x.jpg 2x"
+                src="./images/studio/work/work1_l-@1x.jpg"
+                alt="Створюємо структуру вашого сайту"
+                width="370"
+              />
               <div class="work__wrapper">
                 <h3 class="work__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./images/studio/img2.jpg" alt="Адаптивна верстка під будь-який пристрій" width="370" />
+              <img
+                class="work__img"
+                srcset="./images/studio/work/work2_l-@1x.jpg 1x, ./images/studio/work/work2_l-@2x.jpg 2x"
+                src="./images/studio/work/work2_l-@1x.jpg"
+                alt="Адаптивна верстка під будь-який пристрій"
+                width="370"
+              />
               <div class="work__wrapper">
                 <h3 class="work__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./images/studio/img3.jpg" alt="Бездоганний дизайн" width="370" />
+              <img
+                class="work__img"
+                srcset="./images/studio/work/work3_l-@1x.jpg 1x, ./images/studio/work/work3_l-@2x.jpg 2x"
+                src="./images/studio/work/work3_l-@1x.jpg"
+                alt="Бездоганний дизайн"
+                width="370"
+              />
               <div class="work__wrapper">
                 <h3 class="work__title">Дизайнерські рішення</h3>
               </div>
@@ -144,34 +164,76 @@
           <h2 class="studio-section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__avatar" src="./images/studio/img4.jpg" alt="Хлопець у темно-червоній сорочці та окулярах" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/studio/team/ava1_l-@1x.jpg 1x, ./images/studio/team/ava1_l-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/studio/team/ava1_m-@1x.jpg 1x, ./images/studio/team/ava1_m-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/studio/team/ava1_s-@1x.jpg 1x, ./images/studio/team/ava1_s-@2x.jpg 2x"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/studio/team/ava1_s-@1x.jpg"
+                  alt="Хлопець у темно-червоній сорочці та окулярах"
+                />
+              </picture>
               <div class="team__group">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a class="socials__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      class="socials__link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      class="socials__link"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      class="socials__link"
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a
+                      class="socials__link"
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -181,34 +243,73 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__avatar" src="./images/studio/img5.jpg" alt="Білява дівчина в окулярах" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/studio/team/ava2_l-@1x.jpg 1x, ./images/studio/team/ava2_l-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/studio/team/ava2_m-@1x.jpg 1x, ./images/studio/team/ava2_m-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/studio/team/ava2_s-@1x.jpg 1x, ./images/studio/team/ava2_s-@2x.jpg 2x"
+                />
+                <img class="team__avatar" src="./images/studio/team/ava2_s-@1x.jpg" alt="Білява дівчина в окулярах" />
+              </picture>
+
               <div class="team__group">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a class="socials__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      class="socials__link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      class="socials__link"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      class="socials__link"
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a
+                      class="socials__link"
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -218,34 +319,72 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__avatar" src="./images/studio/img6.jpg" alt="Хлопець у блакитній сорочці" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/studio/team/ava3_l-@1x.jpg 1x, ./images/studio/team/ava3_l-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/studio/team/ava3_m-@1x.jpg 1x, ./images/studio/team/ava3_m-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/studio/team/ava3_s-@1x.jpg 1x, ./images/studio/team/ava3_s-@2x.jpg 2x"
+                />
+                <img class="team__avatar" src="./images/studio/team/ava3_s-@1x.jpg" alt="Хлопець у блакитній сорочці" />
+              </picture>
               <div class="team__group">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a class="socials__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      class="socials__link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      class="socials__link"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      class="socials__link"
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a
+                      class="socials__link"
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -255,34 +394,76 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__avatar" src="./images/studio/img7.jpg" alt="Хлопець у чорній футболці та окулярах" width="450" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/studio/team/ava4_l-@1x.jpg 1x, ./images/studio/team/ava4_l-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/studio/team/ava4_m-@1x.jpg 1x, ./images/studio/team/ava4_m-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/studio/team/ava4_s-@1x.jpg 1x, ./images/studio/team/ava4_s-@2x.jpg 2x"
+                />
+                <img
+                  class="team__avatar"
+                  src="./images/studio/team/ava4_s-@1x.jpg"
+                  alt="Хлопець у чорній футболці та окулярах"
+                />
+              </picture>
               <div class="team__group">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a class="socials__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      class="socials__link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      class="socials__link"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      class="socials__link"
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a
+                      class="socials__link"
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -369,28 +550,52 @@
           <p class="footer-socials__text">приєднуйтесь</p>
           <ul class="socials">
             <li class="socials__item">
-              <a class="socials__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a
+                class="socials__link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <a
+                class="socials__link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a
+                class="socials__link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a
+                class="socials__link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -472,7 +677,7 @@
             </span>
           </label>
 
-          <button class="btn register__btn" type="submit">Відправити</button>
+          <button class="btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
@@ -500,15 +705,33 @@
       </nav>
 
       <div class="header-contacts">
-        <a class="header-contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
-        <a class="header-contacts__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+        <a class="header-contacts__link header-contacts__link--first" href="mailto:info@devstudio.com">
+          info@devstudio.com</a
+        >
+        <a class="header-contacts__link header-contacts__link--second" href="tel:+380961111111"> +38 096 111 11 11</a>
       </div>
 
       <ul class="mobile-socials">
-        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Instagram</a></li>
-        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Twitter</a></li>
-        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Facebook</a></li>
-        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://instagram.com" target="_blank" rel="noopener norefferer"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://twitter.com" target="_blank" rel="noopener norefferer"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://facebook.com" target="_blank" rel="noopener norefferer"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://linkedin.com" target="_blank" rel="noopener norefferer"
+            >LinkedIn</a
+          >
+        </li>
       </ul>
     </div>
     <!-- Modal script -->

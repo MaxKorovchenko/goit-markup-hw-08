@@ -1,26 +1,41 @@
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   background-color: var(--fallback-bg-cl);
-  background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_s-@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_s-@2x.jpg);
+  }
+
+  // Tablet bg-image
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_m-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_m-@2x.jpg);
+    }
+  }
+
+  //  Desktop bg-image
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_l-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero/hero_l-@2x.jpg);
+    }
+  }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-
-    background-color: var(--fallback-bg-cl);
-    background-image: linear-gradient(var(--bg-gradient-cl-40), var(--bg-gradient-cl-40)), url(../images/studio/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 }
 
@@ -36,6 +51,10 @@
   text-transform: uppercase;
 
   color: var(--light-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 700px;
