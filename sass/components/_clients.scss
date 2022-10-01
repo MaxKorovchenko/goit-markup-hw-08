@@ -13,8 +13,9 @@
     flex-basis: calc((100% - 60px) / 3);
   }
 
-  // width: 170px;
-  // height: 92px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {

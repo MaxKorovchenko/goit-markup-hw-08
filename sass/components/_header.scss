@@ -8,22 +8,13 @@
   }
 }
 
-.mobile-hidden {
+.nav {
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.nav {
-  margin-bottom: auto;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 96px;
+    margin-right: auto;
   }
 }
 
@@ -31,18 +22,17 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    margin-right: 87px;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 
 .nav__list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 50px;
   }
@@ -53,38 +43,33 @@
 }
 
 .nav__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: calc(47 / 40);
-  letter-spacing: 0.02em;
-
-  transition: color var(--animation-time) var(--animation-function);
-
   &--current {
     color: var(--accent-txt-cl);
   }
 
-  @media screen and (min-width: 768px) {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    font-size: 14px;
-    line-height: calc(16 / 14);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: calc(16 / 14);
 
-    &--current::after {
-      position: absolute;
-      display: inline-block;
-      left: 0;
-      bottom: -1.5%;
+  &--current::after {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: -1.5%;
 
-      content: '';
-      height: 4px;
-      width: 100%;
-      border-radius: 2px;
-      background-color: var(--accent-bg-cl);
-    }
+    content: '';
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--accent-bg-cl);
   }
+
+  transition: color var(--animation-time) var(--animation-function);
 
   &:hover,
   &:focus {
@@ -94,10 +79,7 @@
 
 .header-contacts {
   @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 32px;
-    margin-bottom: 64px;
+    display: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -106,9 +88,10 @@
     gap: 10px;
   }
 
-  // margin-left: auto;
-  // gap: 50px;
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .header-contacts__link {
@@ -118,32 +101,6 @@
 
   font-weight: 500;
   letter-spacing: 0.02em;
-
-  &--second {
-    font-size: 34px;
-    line-height: calc(40 / 34);
-
-    color: var(--accent-txt-cl);
-  }
-
-  &--first {
-    font-size: 24px;
-    line-height: calc(28 / 24);
-
-    color: var(--secondary-txt-cl);
-  }
-
-  @media screen and (max-width: 342px) {
-    &--second {
-      font-size: 27px;
-    }
-  }
-
-  @media screen and (min-width: 343px) and (max-width: 380px) {
-    &--second {
-      font-size: 30px;
-    }
-  }
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
