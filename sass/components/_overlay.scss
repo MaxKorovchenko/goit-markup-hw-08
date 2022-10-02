@@ -11,8 +11,9 @@
   height: 100%;
   padding: 24px;
   display: flex;
-  align-items: center;
+
   justify-content: center;
+  overflow-y: scroll;
 
   transform: translateY(101%);
   transition: transform var(--animation-time) var(--animation-function);
@@ -22,6 +23,10 @@
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
   }
 }
 

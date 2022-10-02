@@ -35,11 +35,14 @@
 .features__title {
   margin-bottom: 10px;
 
-  text-align: center;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__text {
